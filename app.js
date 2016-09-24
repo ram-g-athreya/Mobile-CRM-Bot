@@ -25,7 +25,7 @@ app.use('/output', express.static(__dirname + '/output'));
 // Setting Web Routers
 require('./routes/web')(app);
 
-app.listen(app.get('port'), function () {
+app.listen(app.get('port'), () => {
     console.log('Node app is running on port', app.get('port'));
     var fb = require('./platforms/fb');
     fb.init({

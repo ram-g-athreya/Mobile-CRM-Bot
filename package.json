@@ -1,10 +1,10 @@
 {
-  "name": "MobileCRM Bot",
+  "name": "MobileCRM-Bot",
   "version": "1.0.0",
   "description": "Get started example for Messenger Platform",
   "main": "index.js",
   "scripts": {
-    "start": "nodejs app",
+    "start": "node app",
     "lint": "jshint --exclude-path=.gitignore .",
     "test": "nodejs app"
   },
@@ -26,7 +26,6 @@
     "node": "~6.4.0"
   },
   "devDependencies": {
-    "supervisor": "^0.11.0",
     "mocha": "~2.5.3",
     "chai": "~3.5.0",
     "mochawesome": "~1.4.0",
@@ -36,10 +35,6 @@
     "grunt-contrib-jshint": "~1.0.0",
     "grunt-mocha-test": "~0.12.7",
     "jshint-stylish": "~2.2.0",
-    "grunt-env": "~0.4.4",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-jsdoc": "~2.1.0",
-    "jsdoc": "~3.4.0",
-    "ink-docstrap": "~1.2.1"
+    "grunt-env": "~0.4.4"
   }
 }
