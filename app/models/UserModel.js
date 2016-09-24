@@ -10,11 +10,6 @@ var fields = {
         type: Date,
         default: Date.now
     },
-    city: {
-        id_city: String,
-        city_name: String,
-        state_name: String
-    },
     currentScenario: {
         // Such as car, bike, usedcar etc
         module: String,
@@ -25,8 +20,6 @@ var fields = {
         // Any additional information required for the scenario
         params: String
     },
-    last_notification_time: Date,
-    is_subscribed: {type: Boolean, default: false},
     fbData: {
         first_name: String,
         last_name: String,
@@ -34,11 +27,7 @@ var fields = {
         locale: String,
         timezone: String,
         gender: String
-    },
-    recent: [{
-        title: String,
-        payload: String
-    }]
+    }
 };
 
 var userSchema = new Schema(fields);
