@@ -1,5 +1,7 @@
 // Including environment configurations
-require('dotenv').config();
+if (process.env.ENV !== 'heroku') {
+    require('dotenv').config();
+}
 
 var bodyParser = require('body-parser'),
     express = require('express');
