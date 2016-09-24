@@ -22,6 +22,10 @@ var routes = {
         // the text we received.
         var messageText = options.messageText;
         console.log(messageText);
+        cb({
+            messageType: 'TextMessage',
+            result: messageText
+        });
     },
     onPostBack: function (options, cb) {
         options.params = options.payload.split("|");
